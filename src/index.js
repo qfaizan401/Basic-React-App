@@ -6,7 +6,7 @@ import App from './App';
 
 ReactDOM.render(
   //<React.StrictMode>
-  <App name='Faizan Qureshi' />,
+  <App name='Faizan Qureshi' age='20' roll_num={ 181 }/>,
   //</React.StrictMode>,
   document.getElementById('root')
 );

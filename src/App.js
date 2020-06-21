@@ -6,6 +6,10 @@ function App(props) {
   return (
     <div>
       Hello World from {props.name}
+      <br/>
+      Age: {props.age}
+      <br/>
+      Roll Number: {props.roll_num + 10}
     </div>
     /*
     <div className="App">
