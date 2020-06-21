@@ -2,36 +2,30 @@ import React from 'react';
 //import logo from './logo.svg';
 import './App.css';
 
-function App(props) {
+function App({name, age, roll_num}) {
   return (
     <div>
-      Hello World from {props.name}
+      Hello World from {name}
       <br/>
-      Age: {props.age}
+      Age: {age}
       <br/>
-      Roll Number: {props.roll_num + 10}
+      Roll Number: {roll_num + 12}
     </div>
-    /*
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-          <br/>
-          Update by Muhammad Faizan Qureshi
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-    */
   );
 }
 
 export default App;
+
+//Newer Method of De-sturcturing
+  /*
+  let user = {Name:"Muhammmad Suffyan", Age:18, Field:"BDS"}
+  let {Name, Age, Field} = user
+  console.log(Name,Age,Field)
+  */
+  //Older Method of De-sturcturing
+  /*
+  let user = {Name:"Muhammmad Suffyan", Age:18, Field:"BDS"}
+  let student_name = user.Name
+  let student_age = user.Age
+  console.log(student_name,student_age)
+  */
