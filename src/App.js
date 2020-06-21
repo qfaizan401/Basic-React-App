@@ -2,9 +2,11 @@ import React from 'react';
 //import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function App(props) {
   return (
-    <div>Hello World from App.js</div>
+    <div>
+      Hello World from {props.name}
+    </div>
     /*
     <div className="App">
       <header className="App-header">

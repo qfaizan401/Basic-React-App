@@ -6,7 +6,7 @@ import App from './App';
 
 ReactDOM.render(
   //<React.StrictMode>
-  <App />,
+  <App name='Faizan Qureshi' />,
   //</React.StrictMode>,
   document.getElementById('root')
 );
