@@ -1,6 +1,7 @@
 import React from 'react';
 //import logo from './logo.svg';
 import './App.css';
+import MyComponent from './MyComponent'
 
 function App({name, age, roll_num}) {
   return (
@@ -10,6 +11,7 @@ function App({name, age, roll_num}) {
       Age: {age}
       <br/>
       Roll Number: {roll_num + 12}
+      <MyComponent my_name = { name } />
     </div>
   );
 }
